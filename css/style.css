@@ -1,0 +1,12 @@
+body {
+  font-family: Roboto, raleway, sans-serif;
+  color: var(--main-text-color);
+  --main-text-color: #212121;
+  --background-color: FFFFFF;
+  --hover-color: #2196f3;
+  --background-footer-color: #2f303a;
+}
+
+.button {
+  cursor: pointer;
+}
