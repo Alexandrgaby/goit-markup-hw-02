@@ -94,6 +94,8 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #ffffff;
+  display: flex;
+  text-decoration: none;
 }
 .adress-footer:hover {
   color: var(--hover-color);
@@ -108,6 +110,9 @@ body {
 }
 .contact-footer:hover {
   color: var(--hover-color);
+}
+.footer-page {
+  background-color: var(--background-footer-color);
 }
 .list-content {
   list-style: none;
