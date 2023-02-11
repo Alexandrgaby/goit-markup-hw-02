@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", "raleway", sans-serif;
   color: var(--main-text-color);
   font-style: normal;
+  --font-weight: 500;
   --main-text-color: #212121;
   --background-color: #ffffff;
   --hover-color: #2196f3;
@@ -14,7 +15,7 @@ body {
   height: 31px;
   font-family: "Raleway";
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000;
   text-decoration: none;
@@ -24,7 +25,7 @@ body {
   height: 31px;
   font-family: "Raleway";
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #fff;
   text-decoration: none;
@@ -37,47 +38,77 @@ body {
 }
 
 .link {
-  font-weight: 500;
+  font-family: "Roboto";
+  font-weight: var(--font-weight);
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: var(--main-text-color);
+}
+.link:hover {
+  color: var(--hover-color);
 }
 .link > p {
   color: var(--contacts-and-links-color);
 }
+.link > p:hover {
+  color: var(--hover-color);
+}
 .buttons {
-  background: #f5f4fa;
+  background-color: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
+  border-style: unset;
+}
+.buttons:hover {
+  color: #fff;
+  background-color: var(--hover-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .buttons > span {
   font-family: "Roboto";
-  font-weight: 500;
+  font-weight: var(--font-weight);
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
 }
 .projects > h3 {
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 .projects > p {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--contacts-and-links-color);
 }
-.contacts-and-adress-footer > p {
+.adress-footer {
+  font-family: "Roboto";
   font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.adress-footer:hover {
+  color: var(--hover-color);
+}
+.contact-footer {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
-.footer-page {
-  background-color: var(--background-footer-color);
+.contact-footer:hover {
+  color: var(--hover-color);
+}
+.list-content {
+  list-style: none;
 }
