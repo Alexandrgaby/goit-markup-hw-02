@@ -38,7 +38,6 @@ body {
 }
 
 .link {
-  font-family: "Roboto";
   font-weight: var(--font-weight);
   font-size: 14px;
   line-height: 1.14;
@@ -93,14 +92,12 @@ body {
   color: var(--contacts-and-links-color);
 }
 .adress-footer {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: #ffffff;
-  display: flex;
   text-decoration: none;
 }
 .adress-footer:hover {
